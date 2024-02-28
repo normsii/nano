@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-family: "DM Sans", sans-serif;
+}
+
+.anta-regular {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: bold;
+  color: #dd3b3b !important;
+}
+
+.main-container {
+  width: 100%;
+}
+
+.icon-fill {
+  color: #dd3b3b;
+}
+
+.h-screen-bg {
+  background-image: url(/images/mobile-bg.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: left;
+}
+
+.nav-width {
+  max-width: 1500px;
+}
+
+.title {
+  font-family: "DM Serif Display", serif;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 45px;
+  line-height: 55px;
+  color: #dd3b3b;
+  background-image: -webkit-linear-gradient(0deg, #dd3b3b 100%, #b92d1c 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-align: center;
+}
+a.nav-link:hover {
+  border-bottom: 1px solid #dd3b3b;
+}
+
+.dmSans {
+  font-family: "DM Sans", sans-serif;
+}
+.dmSansDisplay {
+  font-family: "DM Serif Display", serif;
+}
+
+.sub-title {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.bg-theme {
+  background-color: #dd3b3b;
+}
+.border-theme {
+  border: 1px solid #dd3b3b !important;
+}
+.text-theme {
+  color: #dd3b3b;
+}
+
+.bg-review {
+  background-color: #233142 !important;
+}
+
+.text-gray {
+  color: #eff0f4;
+}
+
+.text-light-pink {
+  color: #ffe5dd;
+}
+
+.swiper-pagination {
+  margin: 10px 0px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #e1f1ff !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #687798 !important;
+}
+
+.card-size {
+  width: 306.4px;
+  height: 306px;
+}
+
+/* buttons */
+
+.buy-buttons button:nth-child(1):hover {
+  background-color: #fc5b5b;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buy-buttons button:nth-child(2):hover {
+  background-color: #dd3b3b;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bottles-section {
+  position: relative;
+  height: 555px;
+}
+
+.bottles {
+  height: 143px;
+  width: 98px;
+}
+
+.bottles-section img:nth-child(1) {
+  position: absolute;
+  left: 170px;
+  top: 70px;
+}
+
+.bottles-section img:nth-child(2) {
+  position: absolute;
+  right: 240px;
+  bottom: 285px;
+}
+
+.bottles-section img:nth-child(3) {
+  position: absolute;
+  bottom: 221px;
+  right: 15px;
+}
+
+.bottles-section img:nth-child(4) {
+  position: absolute;
+  bottom: 130px;
+  left: 20px;
+}
+.bottles-section img:nth-child(5) {
+  position: absolute;
+  bottom: 18px;
+  right: 10px;
+}
+
+/* swiper css */
+
+.swiper {
+  width: 100%;
+  /* height: 100%; */
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+/* media query / change bg in mobile */
+
+@media (min-width: 769px) {
+  .h-screen-bg {
+    background-image: url(/images/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* max-height: 900px; */
+  }
+
+  .bottles {
+    height: 354px;
+    width: 240.75px;
+  }
+
+  .bottles-section {
+    position: relative;
+    height: 850px;
+  }
+
+  .bottles-section img:nth-child(1) {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+  }
+
+  .bottles-section img:nth-child(2) {
+    position: absolute;
+    left: 28%;
+    top: 9%;
+  }
+
+  .bottles-section img:nth-child(3) {
+    position: absolute;
+    top: 19%;
+    right: 15%;
+  }
+
+  .bottles-section img:nth-child(4) {
+    position: absolute;
+    left: 9%;
+    bottom: 22%;
+  }
+  .bottles-section img:nth-child(5) {
+    position: absolute;
+    bottom: 4%;
+    right: 33%;
+    /* display:none; */
+  }
+}
