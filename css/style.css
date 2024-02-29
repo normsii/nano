@@ -134,6 +134,10 @@ a.nav-link:hover {
 .w-55 {
   width: 55% !important;
 }
+
+.w-65 {
+  width: 65% !important;
+}
 .swiper-pagination {
   margin: 10px 0px;
 }
