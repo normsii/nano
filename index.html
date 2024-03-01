@@ -24,6 +24,18 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <style>
+      .nav-tabs .nav-link {
+        position: relative;
+        padding-right: 60px; /* Adjust this value as needed */
+      }
+      .nav-link img {
+        display: none; /* Hide images by default */
+      }
+      .nav-link.active img {
+        display: inline; /* Show image when tab is active */
+      }
+    </style>
   </head>
   <body>
     <div class="main-container">
@@ -128,7 +140,7 @@
 
       <!-- review swiper -->
 
-      <div class="swiper mySwiper bg-review">
+      <div class="swiper swiper1 bg-review">
         <div class="swiper-wrapper">
           <div class="swiper-slide bg-review py-5 px-3">
             <div class="h-100">
@@ -165,7 +177,7 @@
 
       <!-- card -->
 
-      <div class="my-4">
+      <div class="my-4 w-90 mx-auto">
         <div class="w-75 mx-auto">
           <h2 class="dmSansDisplay text-center my-4">
             Unlock your potential, Embrace peak performance
@@ -174,7 +186,7 @@
         <div class="swiper swiper2">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="d-flex flex-column w-100 ms-3 bg-gray">
+              <div class="d-flex flex-column w-100 bg-gray">
                 <div
                   class="slider-card-size-1 d-flex justify-content-center align-items-center position-relative"
                 >
@@ -206,7 +218,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="d-flex flex-column w-100 ms-3 bg-gray">
+              <div class="d-flex flex-column w-100 bg-gray">
                 <div
                   class="slider-card-size-2 d-flex justify-content-center align-items-center position-relative"
                 >
@@ -237,7 +249,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="d-flex flex-column w-100 ms-3 bg-gray">
+              <div class="d-flex flex-column w-100 bg-gray">
                 <div
                   class="slider-card-size-3 d-flex justify-content-center align-items-center position-relative"
                 >
@@ -270,7 +282,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="d-flex flex-column w-100 ms-3 bg-gray">
+              <div class="d-flex flex-column w-100 bg-gray">
                 <div
                   class="slider-card-size-4 d-flex justify-content-center align-items-center position-relative"
                 >
@@ -303,7 +315,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="d-flex flex-column w-100 ms-3 bg-gray">
+              <div class="d-flex flex-column w-100 bg-gray">
                 <div
                   class="slider-card-size-5 d-flex justify-content-center align-items-center position-relative"
                 >
@@ -387,7 +399,7 @@
         </div>
       </div>
 
-      <!-- slider slider -->
+      <!-- subscribe area slider -->
 
       <div class="container-fluid text-center w-80 mt-4">
         <h1 class="font-24 dmSansDisplay">Empower Men's Health, Naturally</h1>
@@ -400,15 +412,27 @@
           LEARN MORE
         </button>
 
-        <div class="swiper mt-4">
+        <div class="swiper swiper3 mt-4">
           <div class="swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide">
               <div class="container d-flex flex-column">
-                <div class="bg-theme w-100" style="height: 300px;">
-
+                <div class="w-full bg-theme h-274 position-relative">
+                  <img
+                    src="./images/bottles-bg/erectomass/erectomass.png"
+                    class="bottle-size-1"
+                  />
+                  <img
+                    src="./images/bottles-bg/erectomass/erectomass-1.png"
+                    class="erecto-sachet-1"
+                  />
+                  <span class="dmSans font-16 text-white card-title text-700"
+                    >Manhood Size Increaser</span
+                  >
+                  <span class="bg-black position-absolute all-natural">
+                    <h1 class="font-8 text-white px-1 m-0">All-Natural</h1>
+                  </span>
                 </div>
-                <div>
+                <div class="my-3">
                   <i class="bi bi-star-fill" style="color: #eac612"></i>
                   <i class="bi bi-star-fill" style="color: #eac612"></i>
                   <i class="bi bi-star-fill" style="color: #eac612"></i>
@@ -442,7 +466,6 @@
                             </p>
                           </td>
                         </tr>
-
                         <tr>
                           <td><i class="bi bi-check2"></i></td>
                           <td>
@@ -454,45 +477,704 @@
                       </tbody>
                     </table>
                   </div>
-
-                  <!-- <div
-                    class="container w-55 d-flex justify-content-center align-items-start flex-column"
-                  >
-                    <div
-                      class="d-flex justify-content-start align-items-center gap-1"
-                    >
-                      <i class="bi bi-check2"></i>
-                      <p class="m-0 dmSans font-12 text-400">
-                        increase penis size
-                      </p>
-                    </div>
-                    <div
-                      class="d-flex justify-content-start align-items-center gap-1"
-                    >
-                      <i class="bi bi-check2"></i>
-                      <p class="m-0 dmSans font-12 text-400">
-                        enhance your confidence
-                      </p>
-                    </div>
-                    <div
-                      class="d-flex justify-content-start align-items-center gap-1"
-                    >
-                      <i class="bi bi-check2"></i>
-                      <p class="m-0 dmSans font-12 text-400">
-                        2 capsules per day
-                      </p>
-                    </div>
-                  </div> -->
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
+
+            <div class="swiper-slide">
+              <div class="container d-flex flex-column">
+                <div class="w-full bg-ignite h-274 position-relative">
+                  <img
+                    src="./images/bottles-bg/ignite-drive/sex drive ignite.png"
+                    class="bottle-size-1"
+                  />
+                  <img
+                    src="./images/bottles-bg/ignite-drive/sex drive ignite-1.png"
+                    class="erecto-sachet-1"
+                  />
+                  <span class="dmSans font-16 text-white card-title text-700"
+                    >Manhood Size Increaser</span
+                  >
+                  <span class="bg-black position-absolute all-natural">
+                    <h1 class="font-8 text-white px-1 m-0">All-Natural</h1>
+                  </span>
+                </div>
+                <div class="my-3">
+                  <i class="bi bi-star-fill" style="color: #eac612"></i>
+                  <i class="bi bi-star-fill" style="color: #eac612"></i>
+                  <i class="bi bi-star-fill" style="color: #eac612"></i>
+                  <i class="bi bi-star-fill" style="color: #eac612"></i>
+                  <i class="bi bi-star-fill" style="color: #eac612"></i>
+
+                  <p class="dmSansDisplay font-16">Erectomass</p>
+                  <p class="font-12 dmSans">all-natural penis size increaser</p>
+                  <button
+                    class="text-white px-4 py-3 border-theme fw-bold bg-theme dmSans font-12"
+                  >
+                    SUBSCRIBE NOW - $43.00
+                  </button>
+
+                  <div>
+                    <table class="table-sm table-borderless mx-auto">
+                      <tbody>
+                        <tr>
+                          <td><i class="bi bi-check2"></i></td>
+                          <td>
+                            <p class="m-0 dmSans font-12 text-400">
+                              increase penis size
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><i class="bi bi-check2"></i></td>
+                          <td>
+                            <p class="m-0 dmSans font-12 text-400">
+                              enhance your confidence
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><i class="bi bi-check2"></i></td>
+                          <td>
+                            <p class="m-0 dmSans font-12 text-400">
+                              2 capsules per day
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="container d-flex flex-column">
+                <div class="w-full bg-perf-enhancer h-274 position-relative">
+                  <img
+                    src="./images/bottles-bg/enhancer/performance enhancer.png"
+                    class="bottle-size-1"
+                  />
+                  <img
+                    src="./images/bottles-bg/enhancer/performance enhancer-1.png"
+                    class="erecto-sachet-1"
+                  />
+                  <span class="dmSans font-16 text-white card-title text-700"
+                    >Manhood Size Increaser</span
+                  >
+                  <span class="bg-black position-absolute all-natural">
+                    <h1 class="font-8 text-white px-1 m-0">All-Natural</h1>
+                  </span>
+                </div>
+                <div class="my-3">
+                  <i class="bi bi-star-fill" style="color: #eac612"></i>
+                  <i class="bi bi-star-fill" style="color: #eac612"></i>
+                  <i class="bi bi-star-fill" style="color: #eac612"></i>
+                  <i class="bi bi-star-fill" style="color: #eac612"></i>
+                  <i class="bi bi-star-fill" style="color: #eac612"></i>
+
+                  <p class="dmSansDisplay font-16">Erectomass</p>
+                  <p class="font-12 dmSans">all-natural penis size increaser</p>
+                  <button
+                    class="text-white px-4 py-3 border-theme fw-bold bg-theme dmSans font-12"
+                  >
+                    SUBSCRIBE NOW - $43.00
+                  </button>
+
+                  <div>
+                    <table class="table-sm table-borderless mx-auto">
+                      <tbody>
+                        <tr>
+                          <td><i class="bi bi-check2"></i></td>
+                          <td>
+                            <p class="m-0 dmSans font-12 text-400">
+                              increase penis size
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><i class="bi bi-check2"></i></td>
+                          <td>
+                            <p class="m-0 dmSans font-12 text-400">
+                              enhance your confidence
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><i class="bi bi-check2"></i></td>
+                          <td>
+                            <p class="m-0 dmSans font-12 text-400">
+                              2 capsules per day
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="container d-flex flex-column">
+                <div class="w-full bg-volume-increaser h-274 position-relative">
+                  <img
+                    src="./images/bottles-bg/increaser/volume increaser.png"
+                    class="bottle-size-1"
+                  />
+                  <img
+                    src="./images/bottles-bg/increaser/volume increaser-1.png"
+                    class="erecto-sachet-1"
+                  />
+                  <span class="dmSans font-16 text-white card-title text-700"
+                    >Manhood Size Increaser</span
+                  >
+                  <span class="bg-black position-absolute all-natural">
+                    <h1 class="font-8 text-white px-1 m-0">All-Natural</h1>
+                  </span>
+                </div>
+                <div class="my-3">
+                  <i class="bi bi-star-fill" style="color: #eac612"></i>
+                  <i class="bi bi-star-fill" style="color: #eac612"></i>
+                  <i class="bi bi-star-fill" style="color: #eac612"></i>
+                  <i class="bi bi-star-fill" style="color: #eac612"></i>
+                  <i class="bi bi-star-fill" style="color: #eac612"></i>
+
+                  <p class="dmSansDisplay font-16">Erectomass</p>
+                  <p class="font-12 dmSans">all-natural penis size increaser</p>
+                  <button
+                    class="text-white px-4 py-3 border-theme fw-bold bg-theme dmSans font-12"
+                  >
+                    SUBSCRIBE NOW - $43.00
+                  </button>
+
+                  <div>
+                    <table class="table-sm table-borderless mx-auto">
+                      <tbody>
+                        <tr>
+                          <td><i class="bi bi-check2"></i></td>
+                          <td>
+                            <p class="m-0 dmSans font-12 text-400">
+                              increase penis size
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><i class="bi bi-check2"></i></td>
+                          <td>
+                            <p class="m-0 dmSans font-12 text-400">
+                              enhance your confidence
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><i class="bi bi-check2"></i></td>
+                          <td>
+                            <p class="m-0 dmSans font-12 text-400">
+                              2 capsules per day
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="container d-flex flex-column">
+                <div class="w-full bg-energy-level h-274 position-relative">
+                  <img
+                    src="./images/bottles-bg/enhancer-2/energy enhancer.png"
+                    class="bottle-size-1"
+                  />
+                  <img
+                    src="./images/bottles-bg/enhancer-2/energy enhancer-1.png"
+                    class="erecto-sachet-1"
+                  />
+                  <span class="dmSans font-16 text-white card-title text-700"
+                    >Manhood Size Increaser</span
+                  >
+                  <span class="bg-black position-absolute all-natural">
+                    <h1 class="font-8 text-white px-1 m-0">All-Natural</h1>
+                  </span>
+                </div>
+                <div class="my-3">
+                  <i class="bi bi-star-fill" style="color: #eac612"></i>
+                  <i class="bi bi-star-fill" style="color: #eac612"></i>
+                  <i class="bi bi-star-fill" style="color: #eac612"></i>
+                  <i class="bi bi-star-fill" style="color: #eac612"></i>
+                  <i class="bi bi-star-fill" style="color: #eac612"></i>
+
+                  <p class="dmSansDisplay font-16">Erectomass</p>
+                  <p class="font-12 dmSans">all-natural penis size increaser</p>
+                  <button
+                    class="text-white px-4 py-3 border-theme fw-bold bg-theme dmSans font-12"
+                  >
+                    SUBSCRIBE NOW - $43.00
+                  </button>
+
+                  <div>
+                    <table class="table-sm table-borderless mx-auto">
+                      <tbody>
+                        <tr>
+                          <td><i class="bi bi-check2"></i></td>
+                          <td>
+                            <p class="m-0 dmSans font-12 text-400">
+                              increase penis size
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><i class="bi bi-check2"></i></td>
+                          <td>
+                            <p class="m-0 dmSans font-12 text-400">
+                              enhance your confidence
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><i class="bi bi-check2"></i></td>
+                          <td>
+                            <p class="m-0 dmSans font-12 text-400">
+                              2 capsules per day
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sub-slide-next"></div>
+            <div class="swiper-button-next2"></div>
           </div>
         </div>
       </div>
 
       <!-- end of slider -->
+
+      <div class="container">
+        <div class="d-flex align-items-start bg-tab">
+          <div
+            class="nav flex-column nav-pills w-40"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <div
+              class="nav-link active position-relative overflow-hidden rounded-0 border-l-theme"
+              id="erecto-mass-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#erecto-mass"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-erecto"
+              aria-selected="true"
+            >
+              <p class="dmSans font-32 m-0 my-5">ErectoMass</p>
+              <img
+                src="/images/bottles-bg/erectomass/erectomass.png"
+                class="bottle-tilt"
+              />
+            </div>
+
+            <div
+              class="nav-link position-relative overflow-hidden rounded-0 border-l-theme"
+              id="ignite-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#ignite"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-ignite"
+              aria-selected="true"
+            >
+            <p class="dmSans font-32 m-0 my-5">Sex Drive Ignite</p>
+              <img
+                src="/images/bottles-bg/ignite-drive/sex drive ignite.png"
+                class="bottle-tilt"
+              />
+            </div>
+
+            <div
+              class="nav-link position-relative overflow-hidden rounded-0 border-l-theme"
+              id="perf-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#perf"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-perf"
+              aria-selected="true"
+            >
+              <p class="dmSans font-32 m-0 my-5">Performance Tab</p>
+              <img
+                src="/images/bottles-bg/enhancer/performance enhancer.png"
+                class="bottle-tilt"
+              />
+            </div>
+
+            <div
+              class="nav-link position-relative overflow-hidden rounded-0 border-l-theme"
+              id="volume-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#volume"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-volume"
+              aria-selected="true"
+            >
+              <p class="dmSans font-32 m-0 my-5">Volume Tab</p>
+              <img
+                src="/images/bottles-bg/increaser/volume increaser.png"
+                class="bottle-tilt"
+              />
+            </div>
+
+            <div
+              class="nav-link position-relative overflow-hidden rounded-0 border-l-theme"
+              id="energy-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#energy"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-energy"
+              aria-selected="true"
+            >
+              <p class="dmSans font-32 m-0 my-5">Energy Tab</p>
+              <img
+                src="/images/bottles-bg/enhancer-2/energy enhancer.png"
+                class="bottle-tilt"
+              />
+            </div>
+          </div>
+
+          <!-- content -->
+
+          <div class="tab-content w-100 bg-tab-light" id="v-pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="erecto-mass"
+              role="tabpanel"
+              aria-labelledby="erecto-mass-tab"
+            >
+              <div class="d-flex flex-column ms-5 my-5">
+                <div>
+                  <h1 class="dmSansDisplay font-32">
+                    <img src="/images//icons/check.png" class="me-2" /> Why We
+                    Made It
+                  </h1>
+                  <ul class="dmSans font-16">
+                    <li>To enjoy longer lasting, more satisfying sex</li>
+                    <li>Because sex shouldn’t cause stress and frustration</li>
+                  </ul>
+                </div>
+                <div>
+                  <h1 class="dmSansDisplay font-32">
+                    <img src="/images//icons/check.png" class="me-2" /> How
+                    We’re Different
+                  </h1>
+                  <ul class="dmSans font-16">
+                    <li>
+                      No numbing sprays or wipes here. Sex should be enjoyed to
+                      the fullest, not desensitized
+                    </li>
+                    <li>
+                      No prescription necessary. We’re taking a research-backed,
+                      drug-free, all-natural approachn
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h1 class="dmSansDisplay font-32">
+                    <img src="/images//icons/check.png" class="me-2" /> How to
+                    Take It
+                  </h1>
+                  <ul class="dmSans font-16">
+                    <li>Each jar contains 30 capsules</li>
+                    <li>Take 2 capsules daily</li>
+                  </ul>
+                </div>
+                <div class="mx-auto">
+                  <button
+                    class="text-white px-4 py-2 border-theme fw-bold bg-theme dmSans font-24"
+                  >
+                    SHOP NANO ERECTOMASS
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="ignite"
+              role="tabpanel"
+              aria-labelledby="ignite-tab"
+            >
+            <div class="d-flex flex-column ms-5 my-5">
+              <div>
+                <h1 class="dmSansDisplay font-32">
+                  <img src="/images//icons/check.png" class="me-2" /> Why We
+                  Made It
+                </h1>
+                <ul class="dmSans font-16">
+                  <li>To enjoy longer lasting, more satisfying sex</li>
+                  <li>Because sex shouldn’t cause stress and frustration</li>
+                </ul>
+              </div>
+              <div>
+                <h1 class="dmSansDisplay font-32">
+                  <img src="/images//icons/check.png" class="me-2" /> How
+                  We’re Different
+                </h1>
+                <ul class="dmSans font-16">
+                  <li>
+                    No numbing sprays or wipes here. Sex should be enjoyed to
+                    the fullest, not desensitized
+                  </li>
+                  <li>
+                    No prescription necessary. We’re taking a research-backed,
+                    drug-free, all-natural approachn
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h1 class="dmSansDisplay font-32">
+                  <img src="/images//icons/check.png" class="me-2" /> How to
+                  Take It
+                </h1>
+                <ul class="dmSans font-16">
+                  <li>Each jar contains 30 capsules</li>
+                  <li>Take 2 capsules daily</li>
+                </ul>
+              </div>
+              <div class="mx-auto">
+                <button
+                  class="text-white px-4 py-2 border-theme fw-bold bg-theme dmSans font-24"
+                >
+                  SHOP NANO ERECTOMASS
+                </button>
+              </div>
+            </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="perf"
+              role="tabpanel"
+              aria-labelledby="perf-tab"
+            >
+            <div class="d-flex flex-column ms-5 my-5">
+              <div>
+                <h1 class="dmSansDisplay font-32">
+                  <img src="/images//icons/check.png" class="me-2" /> Why We
+                  Made It
+                </h1>
+                <ul class="dmSans font-16">
+                  <li>To enjoy longer lasting, more satisfying sex</li>
+                  <li>Because sex shouldn’t cause stress and frustration</li>
+                </ul>
+              </div>
+              <div>
+                <h1 class="dmSansDisplay font-32">
+                  <img src="/images//icons/check.png" class="me-2" /> How
+                  We’re Different
+                </h1>
+                <ul class="dmSans font-16">
+                  <li>
+                    No numbing sprays or wipes here. Sex should be enjoyed to
+                    the fullest, not desensitized
+                  </li>
+                  <li>
+                    No prescription necessary. We’re taking a research-backed,
+                    drug-free, all-natural approachn
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h1 class="dmSansDisplay font-32">
+                  <img src="/images//icons/check.png" class="me-2" /> How to
+                  Take It
+                </h1>
+                <ul class="dmSans font-16">
+                  <li>Each jar contains 30 capsules</li>
+                  <li>Take 2 capsules daily</li>
+                </ul>
+              </div>
+              <div class="mx-auto">
+                <button
+                  class="text-white px-4 py-2 border-theme fw-bold bg-theme dmSans font-24"
+                >
+                  SHOP NANO ERECTOMASS
+                </button>
+              </div>
+            </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="volume"
+              role="tabpanel"
+              aria-labelledby="volume-tab"
+            >
+            <div class="d-flex flex-column ms-5 my-5">
+              <div>
+                <h1 class="dmSansDisplay font-32">
+                  <img src="/images//icons/check.png" class="me-2" /> Why We
+                  Made It
+                </h1>
+                <ul class="dmSans font-16">
+                  <li>To enjoy longer lasting, more satisfying sex</li>
+                  <li>Because sex shouldn’t cause stress and frustration</li>
+                </ul>
+              </div>
+              <div>
+                <h1 class="dmSansDisplay font-32">
+                  <img src="/images//icons/check.png" class="me-2" /> How
+                  We’re Different
+                </h1>
+                <ul class="dmSans font-16">
+                  <li>
+                    No numbing sprays or wipes here. Sex should be enjoyed to
+                    the fullest, not desensitized
+                  </li>
+                  <li>
+                    No prescription necessary. We’re taking a research-backed,
+                    drug-free, all-natural approachn
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h1 class="dmSansDisplay font-32">
+                  <img src="/images//icons/check.png" class="me-2" /> How to
+                  Take It
+                </h1>
+                <ul class="dmSans font-16">
+                  <li>Each jar contains 30 capsules</li>
+                  <li>Take 2 capsules daily</li>
+                </ul>
+              </div>
+              <div class="mx-auto">
+                <button
+                  class="text-white px-4 py-2 border-theme fw-bold bg-theme dmSans font-24"
+                >
+                  SHOP NANO ERECTOMASS
+                </button>
+              </div>
+            </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-settings"
+              role="tabpanel"
+              aria-labelledby="v-pills-settings-tab"
+            >
+            <div class="d-flex flex-column ms-5 my-5">
+              <div>
+                <h1 class="dmSansDisplay font-32">
+                  <img src="/images//icons/check.png" class="me-2" /> Why We
+                  Made It
+                </h1>
+                <ul class="dmSans font-16">
+                  <li>To enjoy longer lasting, more satisfying sex</li>
+                  <li>Because sex shouldn’t cause stress and frustration</li>
+                </ul>
+              </div>
+              <div>
+                <h1 class="dmSansDisplay font-32">
+                  <img src="/images//icons/check.png" class="me-2" /> How
+                  We’re Different
+                </h1>
+                <ul class="dmSans font-16">
+                  <li>
+                    No numbing sprays or wipes here. Sex should be enjoyed to
+                    the fullest, not desensitized
+                  </li>
+                  <li>
+                    No prescription necessary. We’re taking a research-backed,
+                    drug-free, all-natural approachn
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h1 class="dmSansDisplay font-32">
+                  <img src="/images//icons/check.png" class="me-2" /> How to
+                  Take It
+                </h1>
+                <ul class="dmSans font-16">
+                  <li>Each jar contains 30 capsules</li>
+                  <li>Take 2 capsules daily</li>
+                </ul>
+              </div>
+              <div class="mx-auto">
+                <button
+                  class="text-white px-4 py-2 border-theme fw-bold bg-theme dmSans font-24"
+                >
+                  SHOP NANO ERECTOMASS
+                </button>
+              </div>
+            </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="energy"
+              role="tabpanel"
+              aria-labelledby="energy-tab"
+            >
+            <div class="d-flex flex-column ms-5 my-5">
+              <div>
+                <h1 class="dmSansDisplay font-32">
+                  <img src="/images//icons/check.png" class="me-2" /> Why We
+                  Made It
+                </h1>
+                <ul class="dmSans font-16">
+                  <li>To enjoy longer lasting, more satisfying sex</li>
+                  <li>Because sex shouldn’t cause stress and frustration</li>
+                </ul>
+              </div>
+              <div>
+                <h1 class="dmSansDisplay font-32">
+                  <img src="/images//icons/check.png" class="me-2" /> How
+                  We’re Different
+                </h1>
+                <ul class="dmSans font-16">
+                  <li>
+                    No numbing sprays or wipes here. Sex should be enjoyed to
+                    the fullest, not desensitized
+                  </li>
+                  <li>
+                    No prescription necessary. We’re taking a research-backed,
+                    drug-free, all-natural approachn
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h1 class="dmSansDisplay font-32">
+                  <img src="/images//icons/check.png" class="me-2" /> How to
+                  Take It
+                </h1>
+                <ul class="dmSans font-16">
+                  <li>Each jar contains 30 capsules</li>
+                  <li>Take 2 capsules daily</li>
+                </ul>
+              </div>
+              <div class="mx-auto">
+                <button
+                  class="text-white px-4 py-2 border-theme fw-bold bg-theme dmSans font-24"
+                >
+                  SHOP NANO ERECTOMASS
+                </button>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -500,12 +1182,81 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 
     <script>
-      const swiper = new Swiper(".swiper", {
-        // Pagination
+      const swiper1 = new Swiper(".swiper1", {
         pagination: {
           el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            // spaceBetween: 20,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          // when window width is >= 640px
+        },
+      });
+
+      const swiper2 = new Swiper(".swiper2", {
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        freeMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+        breakpoints: {
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          1400: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+          },
+        },
+      });
+
+      const swiper3 = new Swiper(".swiper3", {
+        // Pagination
+        pagination: {
+          el: ".swiper-pagination3",
           clickable: true,
         },
 
@@ -515,46 +1266,39 @@
           prevEl: ".swiper-button-prev",
         },
 
-        // And if we need scrollbar
         scrollbar: {
           el: ".swiper-scrollbar",
         },
         breakpoints: {
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 20,
+          576: {
+            slidesPerView: 2,
           },
           768: {
-            slidesPerView: 1,
-            spaceBetween: 40,
+            slidesPerView: 2,
+            spaceBetween: 20,
           },
-          1024: {
+
+          992: {
             slidesPerView: 3,
-            spaceBetween: 50,
+            spaceBetween: 20,
+          },
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          1400: {
+            slidesPerView: 5,
+            spaceBetween: 20,
           },
         },
       });
 
-      const swiper2 = new Swiper(".swiper2", {
-        slidesPerView: 1.5,
-        spaceBetween: 10,
-        freeMode: true,
-        breakpoints: {
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-            freeMode: true,
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 40,
-          },
-          1024: {
-            freeMode: true,
-            slidesPerView: 5,
-            spaceBetween: 30,
-          },
-        },
+      $(document).ready(function () {
+        // Show corresponding image when a tab is clicked
+        $(".nav-link").on("click", function () {
+          $(".nav-link").removeClass("active");
+          $(this).addClass("active");
+        });
       });
     </script>
   </body>
