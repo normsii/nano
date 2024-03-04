@@ -24,16 +24,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
     <style>
-      .nav-tabs .nav-link {
-        position: relative;
-        padding-right: 60px; /* Adjust this value as needed */
+      /* Style the tab content */
+      .tab-contents {
+        display: none;
       }
-      .nav-link img {
-        display: none; /* Hide images by default */
+      .tab-contents.active {
+        display: block;
       }
-      .nav-link.active img {
-        display: inline; /* Show image when tab is active */
+      .tablink.active {
+        border: 2px solid red; /* Add red border to the active tab */
       }
     </style>
   </head>
@@ -108,7 +109,7 @@
               </button>
             </div>
           </div>
-          <div class="bottles-section">
+          <!-- <div class="bottles-section">
             <img
               src="./images/bottles/increaser-lg.png"
               alt="increaser"
@@ -134,7 +135,7 @@
               alt="enhancer"
               class="bottles img-fluid"
             />
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -358,7 +359,7 @@
       <!-- end of card -->
 
       <div class="container-fluid bg-gray">
-        <div class="row justify-content-center align-items-center w-80 mx-auto">
+        <div class="row justify-content-center align-items-center w-90 mx-auto">
           <div class="col-6 col-lg-3 text-center p-4">
             <div
               class="bg-theme icon-size d-flex justify-content-center align-items-center mx-auto"
@@ -756,8 +757,15 @@
 
       <!-- end of slider -->
 
-      <div class="container">
-        <div class="d-flex align-items-start bg-tab">
+      <!-- nav tabs in desktop -->
+
+      <div class="w-80 mx-auto d-none d-lg-block overflow-hidden my-5">
+        <h1
+          class="dmSansDisplay text-center font-32 text-justify w-90 mx-auto mb-4"
+        >
+          Embark on Your Sexual Wellness Journey Today, Right Here, Right Now.
+        </h1>
+        <div class="d-flex align-items-start bg-tab overflow-hidden">
           <div
             class="nav flex-column nav-pills w-40"
             id="v-pills-tab"
@@ -765,7 +773,7 @@
             aria-orientation="vertical"
           >
             <div
-              class="nav-link active position-relative overflow-hidden rounded-0 border-l-theme"
+              class="nav-link-tabs active position-relative overflow-hidden rounded-0 border-l-theme"
               id="erecto-mass-tab"
               data-bs-toggle="pill"
               data-bs-target="#erecto-mass"
@@ -774,7 +782,7 @@
               aria-controls="v-pills-erecto"
               aria-selected="true"
             >
-              <p class="dmSans font-32 m-0 my-5">ErectoMass</p>
+              <p class="dmSans font-16 text-700 my-5 ms-5">ErectoMass</p>
               <img
                 src="/images/bottles-bg/erectomass/erectomass.png"
                 class="bottle-tilt"
@@ -782,7 +790,7 @@
             </div>
 
             <div
-              class="nav-link position-relative overflow-hidden rounded-0 border-l-theme"
+              class="nav-link-tabs position-relative overflow-hidden rounded-0 border-l-theme"
               id="ignite-tab"
               data-bs-toggle="pill"
               data-bs-target="#ignite"
@@ -791,7 +799,9 @@
               aria-controls="v-pills-ignite"
               aria-selected="true"
             >
-            <p class="dmSans font-32 m-0 my-5">Sex Drive Ignite</p>
+              <p class="dmSans font-16 text-700 my-5 ms-5 w-80">
+                Sex Drive Ignite
+              </p>
               <img
                 src="/images/bottles-bg/ignite-drive/sex drive ignite.png"
                 class="bottle-tilt"
@@ -799,7 +809,7 @@
             </div>
 
             <div
-              class="nav-link position-relative overflow-hidden rounded-0 border-l-theme"
+              class="nav-link-tabs position-relative overflow-hidden rounded-0 border-l-theme"
               id="perf-tab"
               data-bs-toggle="pill"
               data-bs-target="#perf"
@@ -808,7 +818,9 @@
               aria-controls="v-pills-perf"
               aria-selected="true"
             >
-              <p class="dmSans font-32 m-0 my-5">Performance Tab</p>
+              <p class="dmSans font-16 text-700 my-5 ms-5 w-80">
+                Performance Enhancer
+              </p>
               <img
                 src="/images/bottles-bg/enhancer/performance enhancer.png"
                 class="bottle-tilt"
@@ -816,7 +828,7 @@
             </div>
 
             <div
-              class="nav-link position-relative overflow-hidden rounded-0 border-l-theme"
+              class="nav-link-tabs position-relative overflow-hidden rounded-0 border-l-theme"
               id="volume-tab"
               data-bs-toggle="pill"
               data-bs-target="#volume"
@@ -825,7 +837,7 @@
               aria-controls="v-pills-volume"
               aria-selected="true"
             >
-              <p class="dmSans font-32 m-0 my-5">Volume Tab</p>
+              <p class="dmSans font-16 my-5 ms-5 text-700">Volume Tab</p>
               <img
                 src="/images/bottles-bg/increaser/volume increaser.png"
                 class="bottle-tilt"
@@ -833,7 +845,7 @@
             </div>
 
             <div
-              class="nav-link position-relative overflow-hidden rounded-0 border-l-theme"
+              class="nav-link-tabs position-relative overflow-hidden rounded-0 border-l-theme"
               id="energy-tab"
               data-bs-toggle="pill"
               data-bs-target="#energy"
@@ -842,7 +854,7 @@
               aria-controls="v-pills-energy"
               aria-selected="true"
             >
-              <p class="dmSans font-32 m-0 my-5">Energy Tab</p>
+              <p class="dmSans font-16 my-5 ms-5 text-700">Energy Tab</p>
               <img
                 src="/images/bottles-bg/enhancer-2/energy enhancer.png"
                 class="bottle-tilt"
@@ -852,14 +864,18 @@
 
           <!-- content -->
 
-          <div class="tab-content w-100 bg-tab-light" id="v-pills-tabContent">
+          <div
+            class="tab-content w-100 bg-tab-light"
+            id="v-pills-tabContent"
+            style="height: 675px"
+          >
             <div
-              class="tab-pane fade show active"
+              class="tab-pane fade show active h-100"
               id="erecto-mass"
               role="tabpanel"
               aria-labelledby="erecto-mass-tab"
             >
-              <div class="d-flex flex-column ms-5 my-5">
+              <div class="d-flex flex-column gap-5 ms-5 my-5 h-100">
                 <div>
                   <h1 class="dmSansDisplay font-32">
                     <img src="/images//icons/check.png" class="me-2" /> Why We
@@ -912,52 +928,54 @@
               role="tabpanel"
               aria-labelledby="ignite-tab"
             >
-            <div class="d-flex flex-column ms-5 my-5">
-              <div>
-                <h1 class="dmSansDisplay font-32">
-                  <img src="/images//icons/check.png" class="me-2" /> Why We
-                  Made It
-                </h1>
-                <ul class="dmSans font-16">
-                  <li>To enjoy longer lasting, more satisfying sex</li>
-                  <li>Because sex shouldn’t cause stress and frustration</li>
-                </ul>
-              </div>
-              <div>
-                <h1 class="dmSansDisplay font-32">
-                  <img src="/images//icons/check.png" class="me-2" /> How
-                  We’re Different
-                </h1>
-                <ul class="dmSans font-16">
-                  <li>
-                    No numbing sprays or wipes here. Sex should be enjoyed to
-                    the fullest, not desensitized
-                  </li>
-                  <li>
-                    No prescription necessary. We’re taking a research-backed,
-                    drug-free, all-natural approachn
-                  </li>
-                </ul>
-              </div>
+              <div class="d-flex flex-column ms-5 my-5 gap-5">
+                <div>
+                  <h1 class="dmSansDisplay font-32">
+                    <img src="/images//icons/check.png" class="me-2" /> Why We
+                    Made It
+                  </h1>
+                  <ul class="dmSans font-16">
+                    <li>
+                      Enjoying sex first requires being in the mood for sex
+                    </li>
+                    <li>
+                      Decreased libido, stress & anxiety can often get in the
+                      way of arousal and passion
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h1 class="dmSansDisplay font-32">
+                    <img src="/images//icons/check.png" class="me-2" /> How
+                    We’re Different
+                  </h1>
+                  <ul class="dmSans font-16">
+                    <li>No Low T shots, patches or gels here</li>
+                    <li>
+                      An all-natural, research-backed approach to boosting
+                      sexual desire
+                    </li>
+                  </ul>
+                </div>
 
-              <div>
-                <h1 class="dmSansDisplay font-32">
-                  <img src="/images//icons/check.png" class="me-2" /> How to
-                  Take It
-                </h1>
-                <ul class="dmSans font-16">
-                  <li>Each jar contains 30 capsules</li>
-                  <li>Take 2 capsules daily</li>
-                </ul>
+                <div>
+                  <h1 class="dmSansDisplay font-32">
+                    <img src="/images//icons/check.png" class="me-2" /> How to
+                    Take It
+                  </h1>
+                  <ul class="dmSans font-16">
+                    <li>Each jar contains 30 capsules</li>
+                    <li>Take 2 capsules daily</li>
+                  </ul>
+                </div>
+                <div class="mx-auto">
+                  <button
+                    class="text-white px-4 py-2 border-theme fw-bold bg-theme dmSans font-24"
+                  >
+                    SHOP SEX DRIVE IGNITE
+                  </button>
+                </div>
               </div>
-              <div class="mx-auto">
-                <button
-                  class="text-white px-4 py-2 border-theme fw-bold bg-theme dmSans font-24"
-                >
-                  SHOP NANO ERECTOMASS
-                </button>
-              </div>
-            </div>
             </div>
             <div
               class="tab-pane fade"
@@ -965,52 +983,54 @@
               role="tabpanel"
               aria-labelledby="perf-tab"
             >
-            <div class="d-flex flex-column ms-5 my-5">
-              <div>
-                <h1 class="dmSansDisplay font-32">
-                  <img src="/images//icons/check.png" class="me-2" /> Why We
-                  Made It
-                </h1>
-                <ul class="dmSans font-16">
-                  <li>To enjoy longer lasting, more satisfying sex</li>
-                  <li>Because sex shouldn’t cause stress and frustration</li>
-                </ul>
-              </div>
-              <div>
-                <h1 class="dmSansDisplay font-32">
-                  <img src="/images//icons/check.png" class="me-2" /> How
-                  We’re Different
-                </h1>
-                <ul class="dmSans font-16">
-                  <li>
-                    No numbing sprays or wipes here. Sex should be enjoyed to
-                    the fullest, not desensitized
-                  </li>
-                  <li>
-                    No prescription necessary. We’re taking a research-backed,
-                    drug-free, all-natural approachn
-                  </li>
-                </ul>
-              </div>
+              <div class="d-flex flex-column ms-5 my-5 gap-5">
+                <div>
+                  <h1 class="dmSansDisplay font-32">
+                    <img src="/images//icons/check.png" class="me-2" /> Why We
+                    Made It
+                  </h1>
+                  <ul class="dmSans font-16">
+                    <li>To increase sexual performance</li>
+                    <li>
+                      There's nothing more frustrating than not being able to
+                      enjoy sex
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h1 class="dmSansDisplay font-32">
+                    <img src="/images//icons/check.png" class="me-2" /> How
+                    We’re Different
+                  </h1>
+                  <ul class="dmSans font-16">
+                    <li>
+                      No blue pill and its associated side effects. This is a
+                      drug-free approach
+                    </li>
+                    <li>
+                      Take once-daily and be ready whenever the moment arises
+                    </li>
+                  </ul>
+                </div>
 
-              <div>
-                <h1 class="dmSansDisplay font-32">
-                  <img src="/images//icons/check.png" class="me-2" /> How to
-                  Take It
-                </h1>
-                <ul class="dmSans font-16">
-                  <li>Each jar contains 30 capsules</li>
-                  <li>Take 2 capsules daily</li>
-                </ul>
+                <div>
+                  <h1 class="dmSansDisplay font-32">
+                    <img src="/images//icons/check.png" class="me-2" /> How to
+                    Take It
+                  </h1>
+                  <ul class="dmSans font-16">
+                    <li>Each jar contains 30 capsules</li>
+                    <li>Take 2 capsules daily</li>
+                  </ul>
+                </div>
+                <div class="mx-auto">
+                  <button
+                    class="text-white px-4 py-2 border-theme fw-bold bg-theme dmSans font-24"
+                  >
+                    SHOP PERFORMANCE ENHANCER
+                  </button>
+                </div>
               </div>
-              <div class="mx-auto">
-                <button
-                  class="text-white px-4 py-2 border-theme fw-bold bg-theme dmSans font-24"
-                >
-                  SHOP NANO ERECTOMASS
-                </button>
-              </div>
-            </div>
             </div>
             <div
               class="tab-pane fade"
@@ -1018,52 +1038,51 @@
               role="tabpanel"
               aria-labelledby="volume-tab"
             >
-            <div class="d-flex flex-column ms-5 my-5">
-              <div>
-                <h1 class="dmSansDisplay font-32">
-                  <img src="/images//icons/check.png" class="me-2" /> Why We
-                  Made It
-                </h1>
-                <ul class="dmSans font-16">
-                  <li>To enjoy longer lasting, more satisfying sex</li>
-                  <li>Because sex shouldn’t cause stress and frustration</li>
-                </ul>
-              </div>
-              <div>
-                <h1 class="dmSansDisplay font-32">
-                  <img src="/images//icons/check.png" class="me-2" /> How
-                  We’re Different
-                </h1>
-                <ul class="dmSans font-16">
-                  <li>
-                    No numbing sprays or wipes here. Sex should be enjoyed to
-                    the fullest, not desensitized
-                  </li>
-                  <li>
-                    No prescription necessary. We’re taking a research-backed,
-                    drug-free, all-natural approachn
-                  </li>
-                </ul>
-              </div>
+              <div class="d-flex flex-column ms-5 my-5 gap-5">
+                <div>
+                  <h1 class="dmSansDisplay font-32">
+                    <img src="/images//icons/check.png" class="me-2" /> Why We
+                    Made It
+                  </h1>
+                  <ul class="dmSans font-16">
+                    <li>
+                      To make achieving higher amount of sperm volume Experience
+                      incredible orgasms of your life
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h1 class="dmSansDisplay font-32">
+                    <img src="/images//icons/check.png" class="me-2" /> How
+                    We’re Different
+                  </h1>
+                  <ul class="dmSans font-16">
+                    <li>
+                      No blue pill and its associated side effects. This is a
+                      drug-free approach Take once-daily and be ready whenever
+                      the moment arises
+                    </li>
+                  </ul>
+                </div>
 
-              <div>
-                <h1 class="dmSansDisplay font-32">
-                  <img src="/images//icons/check.png" class="me-2" /> How to
-                  Take It
-                </h1>
-                <ul class="dmSans font-16">
-                  <li>Each jar contains 30 capsules</li>
-                  <li>Take 2 capsules daily</li>
-                </ul>
+                <div>
+                  <h1 class="dmSansDisplay font-32">
+                    <img src="/images//icons/check.png" class="me-2" /> How to
+                    Take It
+                  </h1>
+                  <ul class="dmSans font-16">
+                    <li>Each jar contains 30 capsules</li>
+                    <li>Take 2 capsules daily</li>
+                  </ul>
+                </div>
+                <div class="mx-auto">
+                  <button
+                    class="text-white px-4 py-2 border-theme fw-bold bg-theme dmSans font-24"
+                  >
+                    SHOP VOLUME INCREASER
+                  </button>
+                </div>
               </div>
-              <div class="mx-auto">
-                <button
-                  class="text-white px-4 py-2 border-theme fw-bold bg-theme dmSans font-24"
-                >
-                  SHOP NANO ERECTOMASS
-                </button>
-              </div>
-            </div>
             </div>
             <div
               class="tab-pane fade"
@@ -1071,52 +1090,51 @@
               role="tabpanel"
               aria-labelledby="v-pills-settings-tab"
             >
-            <div class="d-flex flex-column ms-5 my-5">
-              <div>
-                <h1 class="dmSansDisplay font-32">
-                  <img src="/images//icons/check.png" class="me-2" /> Why We
-                  Made It
-                </h1>
-                <ul class="dmSans font-16">
-                  <li>To enjoy longer lasting, more satisfying sex</li>
-                  <li>Because sex shouldn’t cause stress and frustration</li>
-                </ul>
-              </div>
-              <div>
-                <h1 class="dmSansDisplay font-32">
-                  <img src="/images//icons/check.png" class="me-2" /> How
-                  We’re Different
-                </h1>
-                <ul class="dmSans font-16">
-                  <li>
-                    No numbing sprays or wipes here. Sex should be enjoyed to
-                    the fullest, not desensitized
-                  </li>
-                  <li>
-                    No prescription necessary. We’re taking a research-backed,
-                    drug-free, all-natural approachn
-                  </li>
-                </ul>
-              </div>
+              <div class="d-flex flex-column ms-5 my-5 gap-5">
+                <div>
+                  <h1 class="dmSansDisplay font-32">
+                    <img src="/images//icons/check.png" class="me-2" /> Why We
+                    Made It
+                  </h1>
+                  <ul class="dmSans font-16">
+                    <li>To maximize energy levels</li>
+                    <li>boosts performance</li>
+                  </ul>
+                </div>
+                <div>
+                  <h1 class="dmSansDisplay font-32">
+                    <img src="/images//icons/check.png" class="me-2" /> How
+                    We’re Different
+                  </h1>
+                  <ul class="dmSans font-16">
+                    <li>
+                      No blue pill and its associated side effects. This is a
+                      drug-free approach
+                    </li>
+                    <li>
+                      Take once-daily and be ready whenever the moment arises
+                    </li>
+                  </ul>
+                </div>
 
-              <div>
-                <h1 class="dmSansDisplay font-32">
-                  <img src="/images//icons/check.png" class="me-2" /> How to
-                  Take It
-                </h1>
-                <ul class="dmSans font-16">
-                  <li>Each jar contains 30 capsules</li>
-                  <li>Take 2 capsules daily</li>
-                </ul>
+                <div>
+                  <h1 class="dmSansDisplay font-32">
+                    <img src="/images//icons/check.png" class="me-2" /> How to
+                    Take It
+                  </h1>
+                  <ul class="dmSans font-16">
+                    <li>Each jar contains 30 capsules</li>
+                    <li>Take 2 capsules daily</li>
+                  </ul>
+                </div>
+                <div class="mx-auto">
+                  <button
+                    class="text-white px-4 py-2 border-theme fw-bold bg-theme dmSans font-24"
+                  >
+                    SHOP ENERGY ENHANCER
+                  </button>
+                </div>
               </div>
-              <div class="mx-auto">
-                <button
-                  class="text-white px-4 py-2 border-theme fw-bold bg-theme dmSans font-24"
-                >
-                  SHOP NANO ERECTOMASS
-                </button>
-              </div>
-            </div>
             </div>
 
             <div
@@ -1125,22 +1143,94 @@
               role="tabpanel"
               aria-labelledby="energy-tab"
             >
-            <div class="d-flex flex-column ms-5 my-5">
-              <div>
-                <h1 class="dmSansDisplay font-32">
-                  <img src="/images//icons/check.png" class="me-2" /> Why We
-                  Made It
-                </h1>
+              <div class="d-flex flex-column ms-5 my-5 gap-5">
+                <div>
+                  <h1 class="dmSansDisplay font-32">
+                    <img src="/images//icons/check.png" class="me-2" /> Why We
+                    Made It
+                  </h1>
+                  <ul class="dmSans font-16">
+                    <li>To enjoy longer lasting, more satisfying sex</li>
+                    <li>Because sex shouldn’t cause stress and frustration</li>
+                  </ul>
+                </div>
+                <div>
+                  <h1 class="dmSansDisplay font-32">
+                    <img src="/images//icons/check.png" class="me-2" /> How
+                    We’re Different
+                  </h1>
+                  <ul class="dmSans font-16">
+                    <li>
+                      No numbing sprays or wipes here. Sex should be enjoyed to
+                      the fullest, not desensitized
+                    </li>
+                    <li>
+                      No prescription necessary. We’re taking a research-backed,
+                      drug-free, all-natural approachn
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h1 class="dmSansDisplay font-32">
+                    <img src="/images//icons/check.png" class="me-2" /> How to
+                    Take It
+                  </h1>
+                  <ul class="dmSans font-16">
+                    <li>Each jar contains 30 capsules</li>
+                    <li>Take 2 capsules daily</li>
+                  </ul>
+                </div>
+                <div class="mx-auto">
+                  <button
+                    class="text-white px-4 py-2 border-theme fw-bold bg-theme dmSans font-24"
+                  >
+                    SHOP NANO ERECTOMASS
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- accordions in mobile -->
+
+      <div class="block d-lg-none">
+        <h1
+          class="dmSansDisplay text-center font-24 text-justify w-90 mx-auto mb-4"
+        >
+          Embark on Your Sexual Wellness Journey Today, Right Here, Right Now.
+        </h1>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed font-16 dmSansDisplay"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                ErectoMass
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <h1 class="dmSansDisplay font-16">Why We Made It</h1>
                 <ul class="dmSans font-16">
                   <li>To enjoy longer lasting, more satisfying sex</li>
                   <li>Because sex shouldn’t cause stress and frustration</li>
                 </ul>
-              </div>
-              <div>
-                <h1 class="dmSansDisplay font-32">
-                  <img src="/images//icons/check.png" class="me-2" /> How
-                  We’re Different
-                </h1>
+
+                <h1 class="dmSansDisplay font-16">How We're Different</h1>
                 <ul class="dmSans font-16">
                   <li>
                     No numbing sprays or wipes here. Sex should be enjoyed to
@@ -1148,29 +1238,303 @@
                   </li>
                   <li>
                     No prescription necessary. We’re taking a research-backed,
-                    drug-free, all-natural approachn
+                    drug-free, all-natural approach
                   </li>
                 </ul>
-              </div>
-
-              <div>
-                <h1 class="dmSansDisplay font-32">
-                  <img src="/images//icons/check.png" class="me-2" /> How to
-                  Take It
-                </h1>
+                <h1 class="dmSansDisplay font-16">How to Take It</h1>
                 <ul class="dmSans font-16">
                   <li>Each jar contains 30 capsules</li>
                   <li>Take 2 capsules daily</li>
                 </ul>
               </div>
-              <div class="mx-auto">
-                <button
-                  class="text-white px-4 py-2 border-theme fw-bold bg-theme dmSans font-24"
-                >
-                  SHOP NANO ERECTOMASS
-                </button>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed font-16 dmSansDisplay"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Sex Srive Ignite
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <h1 class="dmSansDisplay font-16">Why We Made It</h1>
+                <ul class="dmSans font-16">
+                  <li>Enjoying sex first requires being in the mood for sex</li>
+                  <li>
+                    Decreased libido, stress & anxiety can often get in the way
+                    of arousal and passion
+                  </li>
+                </ul>
+
+                <h1 class="dmSansDisplay font-16">How We're Different</h1>
+                <ul class="dmSans font-16">
+                  <li>No Low T shots, patches or gels here</li>
+                  <li>
+                    An all-natural, research-backed approach to boosting sexual
+                    desire
+                  </li>
+                </ul>
+                <h1 class="dmSansDisplay font-16">How to Take It</h1>
+                <ul class="dmSans font-16">
+                  <li>Each jar contains 30 capsules</li>
+                  <li>Take 2 capsules daily</li>
+                </ul>
               </div>
             </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed font-16 dmSansDisplay"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Performance Enhancer
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <h1 class="dmSansDisplay font-16">Why We Made It</h1>
+                <ul class="dmSans font-16">
+                  <li>Because sex shouldn’t cause stress and frustration</li>
+                  <li>
+                    There's nothing more frustrating than not being able to
+                    enjoy sex
+                  </li>
+                </ul>
+
+                <h1 class="dmSansDisplay font-16">How We're Different</h1>
+                <ul class="dmSans font-16">
+                  <li>
+                    No blue pill and its associated side effects. This is a
+                    drug-free approach
+                  </li>
+                  <li>
+                    Take once-daily and be ready whenever the moment arises
+                  </li>
+                </ul>
+                <h1 class="dmSansDisplay font-16">How to Take It</h1>
+                <ul class="dmSans font-16">
+                  <li>Each jar contains 30 capsules</li>
+                  <li>Take 2 capsules daily</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button
+                class="accordion-button collapsed font-16 dmSansDisplay"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Volume Increaser
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <h1 class="dmSansDisplay font-16">Why We Made It</h1>
+                <ul class="dmSans font-16">
+                  <li>To make achieving higher amount of sperm volume</li>
+                  <li>Experience incredible orgasms of your life</li>
+                </ul>
+
+                <h1 class="dmSansDisplay font-16">How We're Different</h1>
+                <ul class="dmSans font-16">
+                  <li>
+                    No blue pill and its associated side effects. This is a
+                    drug-free approach Take once-daily and be ready whenever the
+                    moment arises
+                  </li>
+                </ul>
+                <h1 class="dmSansDisplay font-16">How to Take It</h1>
+                <ul class="dmSans font-16">
+                  <li>Each jar contains 30 capsules</li>
+                  <li>Take 2 capsules daily</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button
+                class="accordion-button collapsed font-16 dmSansDisplay"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                Energy Increaser
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <h1 class="dmSansDisplay font-16">Why We Made It</h1>
+                <ul class="dmSans font-16">
+                  <li>To maximize energy levels</li>
+                  <li>boosts performance</li>
+                </ul>
+
+                <h1 class="dmSansDisplay font-16">How We're Different</h1>
+                <ul class="dmSans font-16">
+                  <li>
+                    No numbing sprays or wipes here. Sex should be enjoyed to
+                    the fullest, not desensitized
+                  </li>
+                  <li>
+                    No prescription necessary. We’re taking a research-backed,
+                    drug-free, all-natural approach
+                  </li>
+                </ul>
+                <h1 class="dmSansDisplay font-16">How to Take It</h1>
+                <ul class="dmSans font-16">
+                  <li>Each jar contains 30 capsules</li>
+                  <li>Take 2 capsules daily</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-100 bg-gray">
+        <div class="w-90 mx-auto">
+          <div class="row justify-content-center">
+            <div class="col-lg-2 col-6 text-center p-3">
+              <div
+                class="w-90 p-3 py-5 justify-center border-3 bg-white tablink"
+                data-tab="tab-erecto"
+              >
+                <h1 class="dmSansDisplay font-16 text-center">
+                  I am looking to last longer in bed
+                </h1>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-6 text-center p-3">
+              <div
+                class="h-60 w-90 p-3 py-5 justify-center bg-white tablink"
+                data-tab="tab-ignite"
+              >
+                <h1 class="dmSansDisplay font-16 text-center">
+                  Im looking to increase my size
+                </h1>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-6 text-center p-3">
+              <div
+                class="h-60 w-90 p-3 py-5 justify-center bg-white tablink"
+                data-tab="tab-energy"
+              >
+                <h1 class="dmSansDisplay font-16 text-center">
+                  I need help boosting my sexual energy
+                </h1>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-6 text-center p-3">
+              <div
+                class="h-60 w-90 p-3 py-5 justify-center bg-white tablink"
+                data-tab="tab-volume"
+              >
+                <h1 class="dmSansDisplay font-16 text-center">
+                  I need help increasing my sperm count
+                </h1>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-6 text-center p-3">
+              <div
+                class="h-60 w-90 p-3 py-5 justify-center bg-white tablink"
+                data-tab="tab-energy-level"
+              >
+                <h1 class="dmSansDisplay font-16 text-center">
+                  I need help increasing energy levels
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-100 d-flex flex-column d-md-flex flex-md-row bg-white p-4"
+          >
+            <div class="h-150 position-relative overflow-hidden">
+              <img
+                src="./images/bottles/erectomass-lg.png"
+                class="bottle-tilt-picker-1"
+              />
+              <img
+                src="./images/bottles/increaser-lg.png"
+                class="bottle-tilt-picker-2"
+              />
+            </div>
+
+            <div>
+              <h1 class="dmSansDisplay font-16 mt-3">
+                NANO ERECTOMASS + NANO VOLUME INCREASER
+              </h1>
+              <p class="dmSans font-12 tab-contents" id="tab-erecto">
+                Nano ErectoMass is a premium male enhancement supplement that is
+                research-backed to give you MASSIVE size, increases stamina,
+                amplifies endurance, and helps you enjoy longer-lasting, more
+                satisfying sex.
+              </p>
+              <p class="dmSans font-12 tab-contents" id="tab-increaser">
+                nano Volume Increaser is a 100% drug-free, physician-formulated
+                sperm count increaser supplement that helps you achieve and
+                maintain a shigh amount of sperm.
+              </p>
+              <p class="dmSans font-12 tab-contents" id="tab-ignite">IGNITE BOTTLE</p>
+              <p class="dmSans font-12 tab-contents" id="tab-energy-level">
+                ENERGY BOTTLE
+              </p>
+              <p class="dmSans font-12 tab-contents" id="tab-volume">
+                VOLUME BOTTLE
+              </p>
+              <p class="dmSans font-12" id="display"></p>
+              <div
+                class="d-flex justify-content-center align-items-center gap-4 my-3"
+              >
+                <h1 class="text-theme">$88</h1>
+                <button class="bg-theme text-white border-0 px-4 py-3 fw-bold">
+                  SUBSCRIBE NOW
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -1215,7 +1579,8 @@
       });
 
       const swiper2 = new Swiper(".swiper2", {
-        spaceBetween: 20,
+        spaceBetween: 10,
+        slidesPerView: 1.25,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -1259,6 +1624,10 @@
           el: ".swiper-pagination3",
           clickable: true,
         },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
 
         // Navigation arrows
         navigation: {
@@ -1295,11 +1664,51 @@
 
       $(document).ready(function () {
         // Show corresponding image when a tab is clicked
-        $(".nav-link").on("click", function () {
-          $(".nav-link").removeClass("active");
+        $(".nav-link-tabs").on("click", function () {
+          $(".nav-link-tabs").removeClass("active");
           $(this).addClass("active");
         });
       });
+
+      const tabLinks = document.querySelectorAll('.tablink');
+    const tabHeadings = document.querySelectorAll('.tab-heading');
+    const contentMapping = {
+        'tab-erecto': "Nano ErectoMass is a premium male enhancement supplement that is research-backed to give you MASSIVE size, increases stamina, amplifies endurance, and helps you enjoy longer-lasting, more satisfying sex."
+        // Add similar mappings for other tabs
+    };
+
+    tabLinks.forEach(tabLink => {
+        tabLink.addEventListener('click', function() {
+            // Toggle the active class for the clicked tab
+            this.classList.toggle('active');
+            
+            // Get the selected tab's content
+            const tabId = this.getAttribute('data-tab');
+            const tabContent = document.getElementById(tabId);
+            
+            // Display the content of the selected tab
+            updateDisplay();
+        });
+    });
+
+    tabHeadings.forEach(heading => {
+        heading.addEventListener('click', function() {
+            const contentKey = this.getAttribute('data-content');
+            document.getElementById('display').innerText = contentMapping[contentKey];
+        });
+    });
+
+    function updateDisplay() {
+        let selectedTabs = [];
+        let selectedContents = [];
+        tabLinks.forEach(tabLink => {
+            if (tabLink.classList.contains('active')) {
+                selectedTabs.push(tabLink.innerText);
+                selectedContents.push(contentMapping[tabLink.getAttribute('data-tab')]);
+            }
+        });
+        document.getElementById('display').innerText = "" + selectedTabs.join(', ') + "\n\n" + selectedContents.join('\n\n');
+    }
     </script>
   </body>
 </html>

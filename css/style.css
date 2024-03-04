@@ -29,13 +29,14 @@ a {
 }
 
 .h-screen-bg {
-  background-image: url(/images/mobile-bg.png);
+  background-image: url(/images/mobile-img-bg.png);
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
+  /* -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
+  -o-background-size: cover; */
   background-size: cover;
-  background-position: left;
+  background-position: center;
+  height: 80vh;
 }
 
 .nav-width {
@@ -182,6 +183,10 @@ a.nav-link:hover {
   height: 274px;
 }
 
+.h-150 {
+  height: 150px;
+}
+
 .swiper-pagination {
   margin: 10px 0px;
 }
@@ -242,17 +247,61 @@ a.nav-link:hover {
   height: 176px;
 }
 
+.bottle-tilt-picker-1 {
+  width: 125.78px;
+  height: 184.75px;
+  transform: rotate(34deg);
+  position: absolute;
+  top: 13%;
+  right: 49%;
+}
+
+.bottle-tilt-picker-2 {
+  width: 125.78px;
+    height: 184.75px;
+    transform: rotate(-37deg);
+    position: absolute;
+    top: 12%;
+    left: 59%;
+}
+
 /* .nav-link.active .border-l-theme {
   border-left: 6px solid #dd3b3b !important;
 } */
 
-.nav-link.active {
+/* NAV-TABS SECTION */
+
+.nav-link-tabs.active {
   background-color: #f5f5f5 !important;
   border-left: 6px solid #dd3b3b !important;
+  color: #b92d1c !important;
+}
+
+.nav-link-tabs.active p {
+  /* transform: translate(0px, 0px) scale(1.4, 1.1);
+  transform: translate(0px, -28px) scale(1.4, 1.1); */
+
+  /* display: inline; */
+  font-size: 25px;
+  transition: all ease 1s;
+  margin-left: 10px !important;
 }
 
 .nav-link {
   color: #b92d1c !important;
+}
+
+.nav-link-tabs {
+  height: 135px;
+}
+
+.nav-tabs .nav-link-tabs {
+}
+.nav-link-tabs img {
+  display: none; /* Hide images by default */
+}
+.nav-link-tabs.active img {
+  display: inline; /* Show image when tab is active */
 }
 
 /* .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
@@ -288,7 +337,7 @@ a.nav-link:hover {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.bottles-section {
+/* .bottles-section {
   position: relative;
   height: 555px;
 }
@@ -325,7 +374,7 @@ a.nav-link:hover {
   position: absolute;
   bottom: 18px;
   right: 10px;
-}
+} */
 
 /* swiper css */
 
@@ -354,26 +403,31 @@ a.nav-link:hover {
 .slider-card-size-1 {
   height: 306px !important;
   background-image: url("/images/bottles-bg/erectomass/erectomass-bg.png");
+  background-size: cover;
 }
 
 .slider-card-size-2 {
   height: 306px !important;
   background-image: url("/images/bottles-bg/ignite-drive/Rectangle\ 33.png");
+  background-size: cover;
 }
 
 .slider-card-size-3 {
   height: 306px !important;
   background-image: url("/images/bottles-bg/enhancer/Rectangle\ 34.png");
+  background-size: cover;
 }
 
 .slider-card-size-4 {
   height: 306px !important;
   background-image: url("/images/bottles-bg/increaser/Rectangle\ 35.png");
+  background-size: cover;
 }
 
 .slider-card-size-5 {
   height: 306px !important;
   background-image: url("/images/bottles-bg/enhancer-2/Rectangle\ 36.png");
+  background-size: cover;
 }
 
 .slider-card-bg-1 {
@@ -485,52 +539,44 @@ a.nav-link:hover {
   height: auto;
 }
 
-@media (min-width: 769px) {
+.accordion-button:not(.collapsed) {
+  background-color: #fff !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-button::after {
+  background-image: url("../images/icons/plus.png") !important;
+}
+
+@media (min-width: 768px) {
   .h-screen-bg {
-    background-image: url(/images/bg.png);
+    background-image: url(/images/bg-bottles.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* max-height: 900px; */
+    height: 820px;
   }
+}
 
-  .bottles {
-    height: 354px;
-    width: 240.75px;
+@media (min-width: 992px) {
+  .h-screen-bg {
+    background-image: url(/images/bg-bottles.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
   }
+}
 
-  .bottles-section {
-    position: relative;
-    height: 850px;
-  }
-
-  .bottles-section img:nth-child(1) {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-  }
-
-  .bottles-section img:nth-child(2) {
-    position: absolute;
-    left: 28%;
-    top: 9%;
-  }
-
-  .bottles-section img:nth-child(3) {
-    position: absolute;
-    top: 19%;
-    right: 15%;
-  }
-
-  .bottles-section img:nth-child(4) {
-    position: absolute;
-    left: 9%;
-    bottom: 22%;
-  }
-  .bottles-section img:nth-child(5) {
-    position: absolute;
-    bottom: 4%;
-    right: 33%;
-    /* display:none; */
+@media (min-width: 1200px) {
+  .h-screen-bg {
+    background-image: url(/images/bg-bottles.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1200px;
   }
 }
