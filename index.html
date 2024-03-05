@@ -24,19 +24,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
-    <style>
-      /* Style the tab content */
-      .tab-contents {
-        display: none;
-      }
-      .tab-contents.active {
-        display: block;
-      }
-      .tablink.active {
-        border: 2px solid red; /* Add red border to the active tab */
-      }
-    </style>
   </head>
   <body>
     <div class="main-container">
@@ -98,7 +85,7 @@
           <div class="w-100">
             <h1 class="title mt-5">Unlock Your Full Potential</h1>
             <p class="dmSans text-center sub-title">
-              Discover Male Enhancement Supplements for Peak Performance!
+              <!-- Discover Male Enhancement Supplements for Peak Performance! -->
             </p>
             <div class="buy-buttons d-flex justify-content-center gap-4 my-4">
               <button class="bg-theme text-white border-0 px-4 py-3 fw-bold">
@@ -444,6 +431,7 @@
                   <p class="font-12 dmSans">all-natural penis size increaser</p>
                   <button
                     class="text-white px-4 py-3 border-theme fw-bold bg-theme dmSans font-12"
+                    onclick="alert('Hello')"
                   >
                     SUBSCRIBE NOW - $43.00
                   </button>
@@ -1431,12 +1419,12 @@
         </div>
       </div>
 
-      <div class="w-100 bg-gray">
+      <div class="w-100 bg-gray py-5">
         <div class="w-90 mx-auto">
           <div class="row justify-content-center">
             <div class="col-lg-2 col-6 text-center p-3">
               <div
-                class="w-90 p-3 py-5 justify-center border-3 bg-white tablink"
+                class="w-90 p-3 p-md-3 py-md-5 justify-center bg-white tablink"
                 data-tab="tab-erecto"
               >
                 <h1 class="dmSansDisplay font-16 text-center">
@@ -1447,7 +1435,7 @@
 
             <div class="col-lg-2 col-6 text-center p-3">
               <div
-                class="h-60 w-90 p-3 py-5 justify-center bg-white tablink"
+                class="h-60 w-90 p-3 p-md-3 py-md-5 justify-center bg-white tablink"
                 data-tab="tab-ignite"
               >
                 <h1 class="dmSansDisplay font-16 text-center">
@@ -1458,8 +1446,8 @@
 
             <div class="col-lg-2 col-6 text-center p-3">
               <div
-                class="h-60 w-90 p-3 py-5 justify-center bg-white tablink"
-                data-tab="tab-energy"
+                class="h-60 w-90 p-3 p-md-3 py-md-5 justify-center bg-white tablink"
+                data-tab="tab-enhancer"
               >
                 <h1 class="dmSansDisplay font-16 text-center">
                   I need help boosting my sexual energy
@@ -1469,8 +1457,8 @@
 
             <div class="col-lg-2 col-6 text-center p-3">
               <div
-                class="h-60 w-90 p-3 py-5 justify-center bg-white tablink"
-                data-tab="tab-volume"
+                class="h-60 w-90 p-3 p-md-3 py-md-5 justify-center bg-white tablink"
+                data-tab="tab-increaser"
               >
                 <h1 class="dmSansDisplay font-16 text-center">
                   I need help increasing my sperm count
@@ -1478,10 +1466,10 @@
               </div>
             </div>
 
-            <div class="col-lg-2 col-6 text-center p-3">
+            <div class="col-lg-2 col-6 text-center p-md-3">
               <div
-                class="h-60 w-90 p-3 py-5 justify-center bg-white tablink"
-                data-tab="tab-energy-level"
+                class="h-60 w-90 p-3 p-md-3 py-md-5 justify-center bg-white tablink"
+                data-tab="tab-volume"
               >
                 <h1 class="dmSansDisplay font-16 text-center">
                   I need help increasing energy levels
@@ -1490,10 +1478,8 @@
             </div>
           </div>
 
-          <div
-            class="w-100 d-flex flex-column d-md-flex flex-md-row bg-white p-4"
-          >
-            <div class="h-150 position-relative overflow-hidden">
+          <div class="w-100 d-flex flex-column flex-md-row bg-white p-4">
+            <div class="h-150 h-desk-100 position-relative overflow-hidden">
               <img
                 src="./images/bottles/erectomass-lg.png"
                 class="bottle-tilt-picker-1"
@@ -1504,31 +1490,16 @@
               />
             </div>
 
-            <div>
-              <h1 class="dmSansDisplay font-16 mt-3">
+            <div class="multi-tabs p-md-5">
+              <h1 class="dmSansDisplay font-16 multi-tabs-font-32 mt-3">
                 NANO ERECTOMASS + NANO VOLUME INCREASER
               </h1>
-              <p class="dmSans font-12 tab-contents" id="tab-erecto">
-                Nano ErectoMass is a premium male enhancement supplement that is
-                research-backed to give you MASSIVE size, increases stamina,
-                amplifies endurance, and helps you enjoy longer-lasting, more
-                satisfying sex.
-              </p>
-              <p class="dmSans font-12 tab-contents" id="tab-increaser">
-                nano Volume Increaser is a 100% drug-free, physician-formulated
-                sperm count increaser supplement that helps you achieve and
-                maintain a shigh amount of sperm.
-              </p>
-              <p class="dmSans font-12 tab-contents" id="tab-ignite">IGNITE BOTTLE</p>
-              <p class="dmSans font-12 tab-contents" id="tab-energy-level">
-                ENERGY BOTTLE
-              </p>
-              <p class="dmSans font-12 tab-contents" id="tab-volume">
-                VOLUME BOTTLE
-              </p>
-              <p class="dmSans font-12" id="display"></p>
+              <div class="">
+                <p class="dmSans font-12" id="display"></p>
+              </div>
+
               <div
-                class="d-flex justify-content-center align-items-center gap-4 my-3"
+                class="d-flex justify-content-center align-items-center justify-content-md-start align-items-md-center gap-4 my-3"
               >
                 <h1 class="text-theme">$88</h1>
                 <button class="bg-theme text-white border-0 px-4 py-3 fw-bold">
@@ -1539,6 +1510,395 @@
           </div>
         </div>
       </div>
+
+      <div class="w-80 mx-auto py-5">
+        <h1 class="dmSansDisplay text-center my-4">
+          Physician-Formulated and Physician-Approved
+        </h1>
+        <div class="swiper swiper-physician">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <!-- content here -->
+
+              <div class="d-flex flex-column flex-lg-row w-100">
+                <img
+                  src="./images/physicians//female.jpg"
+                  class="physician-img-size"
+                />
+                <div
+                  class="d-flex flex-column justify-content-center align-items-left bg-gray p-4 gap-2 gap-md-5 physician"
+                >
+                  <img src="./images/icons/qoute-icon.png" class="qoute-icon" />
+                  <p class="dmSans font-16 text-align-left">
+                    I recommend nano's supplements to my patients because they
+                    work. For some, a prescription solution may not make the
+                    most sense. That's why I'm glad there's an all-natural,
+                    research-backed option for addressing men's sexual health
+                    issues.
+                  </p>
+                  <p class="dmSansDisplay font-16 text-align-left">
+                    Anna Taylor, PA | New York
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="d-flex flex-column flex-lg-row w-100">
+                <img
+                  src="./images/physicians//male.jpg"
+                  class="physician-img-size"
+                />
+                <div
+                  class="d-flex flex-column justify-content-center align-items-left bg-gray p-4 gap-2 gap-md-5 physician"
+                >
+                  <img src="./images/icons/qoute-icon.png" class="qoute-icon" />
+                  <p class="dmSans font-16 text-align-left">
+                    Nano has created quality, natural supplements that have
+                    helped many of my patients address issues such as premature
+                    ejaculation and erectile dysfunction.
+                  </p>
+                  <p class="dmSansDisplay font-16 text-align-left">
+                    Dr. Rem | New York
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination-physician"></div>
+        </div>
+      </div>
+
+      <div
+        class="w-90 mx-auto overflow-hidden my-5 d-md-flex justify-content-md-center"
+      >
+        <div class="text-center my-3 px-md-5">
+          <h1 class="dmSansDisplay font-24">Don’t Just Take it From Us</h1>
+          <i class="bi bi-star-fill" style="color: #eac612"></i>
+          <i class="bi bi-star-fill" style="color: #eac612"></i>
+          <i class="bi bi-star-fill" style="color: #eac612"></i>
+          <i class="bi bi-star-fill" style="color: #eac612"></i>
+          <i class="bi bi-star-fill" style="color: #eac612"></i>
+          <p class="dmSans font-16">4.9/5.0, 100+ reviews</p>
+          <button class="bg-theme text-white border-0 px-4 py-3 fw-bold">
+            SHOP ERECTOMASS
+          </button>
+        </div>
+
+        <div class="d-flex flex-column flex-md-row bg-tab overflow-hidden">
+          <div
+            class="nav flex-row nav-pills order-md-1 justify-content-center"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="horizontal"
+          >
+            <div class="row m-0">
+              <div class="col-6 col-md-12 p-0">
+                <div
+                  class="overflow-hidden rounded-0 nav-link-tabs-2"
+                  id="volume-tab2"
+                  data-bs-toggle="pill"
+                  data-bs-target="#volume2"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-volume2"
+                  aria-selected="true"
+                >
+                  <p
+                    class="dmSansDisplay font-12 text-700 m-0 py-3 text-center-right"
+                  >
+                    Volume Increaser
+                  </p>
+                </div>
+              </div>
+              <div class="col-6 col-md-12 p-0">
+                <div
+                  class="position-relative overflow-hidden rounded-0 nav-link-tabs-2"
+                  id="energy-tab2"
+                  data-bs-toggle="pill"
+                  data-bs-target="#energy2"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-energy2"
+                  aria-selected="true"
+                >
+                  <p
+                    class="dmSansDisplay font-12 text-700 m-0 py-3 text-center-right"
+                  >
+                    Energy Enhancer
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 col-md-12 p-0">
+                <div
+                  class="active position-relative overflow-hidden rounded-0 nav-link-tabs-2"
+                  id="erecto-mass-tab2"
+                  data-bs-toggle="pill"
+                  data-bs-target="#erecto-mass2"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-erecto2"
+                  aria-selected="true"
+                >
+                  <p
+                    class="dmSansDisplay font-12 text-700 m-0 py-3 text-center-right"
+                  >
+                    ErectoMass
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 col-md-12 p-0">
+                <div
+                  class="position-relative overflow-hidden rounded-0 nav-link-tabs-2"
+                  id="ignite-tab2"
+                  data-bs-toggle="pill"
+                  data-bs-target="#ignite2"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-ignite2"
+                  aria-selected="true"
+                >
+                  <p
+                    class="dmSansDisplay font-12 text-700 m-0 py-3 text-center-right"
+                  >
+                    Sex Drive Ignite
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 col-md-12 p-0">
+                <div
+                  class="position-relative overflow-hidden rounded-0 nav-link-tabs-2"
+                  id="perf-tab2"
+                  data-bs-toggle="pill"
+                  data-bs-target="#perf2"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-perf2"
+                  aria-selected="true"
+                >
+                  <p
+                    class="dmSansDisplay font-12 text-700 m-0 py-3 text-center-right"
+                  >
+                    Performance Enhancer
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- content -->
+
+          <div class="tab-content w-100 bg-tab-light" id="v-pills-tabContent">
+            <div
+              class="tab-pane fade show active text-center p-4"
+              id="erecto-mass2"
+              role="tabpanel"
+              aria-labelledby="erecto-mass-tab2"
+            >
+              <!-- content here -->
+
+              <p class="dmSans font-16 fst-italic">
+                "I'm finally lasting longer than a minute. I've never felt more
+                confident in bed"
+              </p>
+              <p class="font-12 dmSans m-0">Eric D</p>
+              <span>
+                <img src="/images//icons/small-check.png" />
+                <span class="font-8">Verified Buyer</span>
+              </span>
+            </div>
+            <div
+              class="tab-pane fade text-center p-4"
+              id="ignite2"
+              role="tabpanel"
+              aria-labelledby="ignite-tab2"
+            >
+              <p class="dmSans font-16 fst-italic">
+                "Gone are the days of stressing about whether I'd be able to get
+                it up anytime"
+              </p>
+              <p class="font-12 dmSans m-0">Mike C</p>
+              <span>
+                <img src="/images//icons/small-check.png" />
+                <span class="font-8">Verified Buyer</span>
+              </span>
+            </div>
+            <div
+              class="tab-pane fade text-center p-4"
+              id="perf2"
+              role="tabpanel"
+              aria-labelledby="perf-tab2"
+            >
+              <p class="dmSans font-16 fst-italic">
+                "I'm finally lasting longer than a minute. I've never felt more
+                confident in bed"
+              </p>
+              <p class="font-12 dmSans m-0">Andrew R</p>
+              <span>
+                <img src="/images//icons/small-check.png" />
+                <span class="font-8">Verified Buyer</span>
+              </span>
+            </div>
+            <div
+              class="tab-pane fade text-center p-4"
+              id="volume2"
+              role="tabpanel"
+              aria-labelledby="volume-tab2"
+            >
+              <p class="dmSans font-16 fst-italic">
+                "I'm finally lasting longer than a minute. I've never felt more
+                confident in bed"
+              </p>
+              <p class="font-12 dmSans m-0">Christopher M</p>
+              <span>
+                <img src="/images//icons/small-check.png" />
+                <span class="font-8">Verified Buyer</span>
+              </span>
+            </div>
+
+            <div
+              class="tab-pane fade text-center p-4"
+              id="energy2"
+              role="tabpanel"
+              aria-labelledby="energy-tab2"
+            >
+              <p class="dmSans font-16 fst-italic">
+                "I'm finally lasting longer than a minute. I've never felt more
+                confident in bed"
+              </p>
+              <p class="font-12 dmSans m-0">Benjamin M</p>
+              <span>
+                <img src="/images//icons/small-check.png" />
+                <span class="font-8">Verified Buyer</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-90 mx-auto overflow-hidden my-5">
+        <h1 class="dmSansDisplay font-32">
+          We've got you covered, no matter the issue
+        </h1>
+
+        <div class="swiper swiper-covered-section">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" data-target="#modal-erecto">
+              <div
+                class="position-relative bg-coat-girl d-flex justify-content-center align-items-center"
+              >
+                <img src="/images/icons/play-icon.png" />
+              </div>
+            </div>
+            <div class="swiper-slide" data-target="#modal-ignite">
+              <div
+                class="position-relative bg-coat-girl d-flex justify-content-center align-items-center"
+              >
+                <img src="/images/icons/play-icon.png" />
+              </div>
+            </div>
+            <div class="swiper-slide" data-target="#modal-enhancer">
+              <div
+                class="position-relative bg-coat-girl d-flex justify-content-center align-items-center"
+              >
+                <img src="/images/icons/play-icon.png" />
+              </div>
+            </div>
+            <div class="swiper-slide" data-target="#modal-increaser">
+              <div
+                class="position-relative bg-coat-girl d-flex justify-content-center align-items-center"
+              >
+                <img src="/images/icons/play-icon.png" />
+              </div>
+            </div>
+            <div class="swiper-slide" data-target="#modal-volume">
+              <div
+                class="position-relative bg-coat-girl d-flex justify-content-center align-items-center"
+              >
+                <img src="/images/icons/play-icon.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- modal -->
+
+        <div class="modal fade " id="modal-erecto" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-coat-girl">
+              <div class="modal-body">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade " id="modal-erecto" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-coat-girl">
+              <div class="modal-body">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade " id="modal-erecto" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-coat-girl">
+              <div class="modal-body">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade " id="modal-erecto" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-coat-girl">
+              <div class="modal-body">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade " id="modal-erecto" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-coat-girl">
+              <div class="modal-body">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- end of modal -->
+      </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -1548,6 +1908,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
       const swiper1 = new Swiper(".swiper1", {
@@ -1662,6 +2023,51 @@
         },
       });
 
+      const swiperPhysician = new Swiper(".swiper-physician", {
+        slidesPerView: 1.25,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination-physician",
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 1.25,
+            spaceBetween: 60,
+          },
+        },
+        // simulateTouch: false,
+        freeMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+
+      // modal covered section
+
+      $(document).ready(function () {
+        var swiper = new Swiper(".swiper-container", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+
+        // Open modal on slide click
+        $(".swiper-slide").click(function () {
+          var target = $(this).data("target");
+          $(target).modal("show");
+        });
+      });
+
+      // end modal covered section
+
       $(document).ready(function () {
         // Show corresponding image when a tab is clicked
         $(".nav-link-tabs").on("click", function () {
@@ -1670,45 +2076,57 @@
         });
       });
 
-      const tabLinks = document.querySelectorAll('.tablink');
-    const tabHeadings = document.querySelectorAll('.tab-heading');
-    const contentMapping = {
-        'tab-erecto': "Nano ErectoMass is a premium male enhancement supplement that is research-backed to give you MASSIVE size, increases stamina, amplifies endurance, and helps you enjoy longer-lasting, more satisfying sex.",
-        'tab-increaser':"nano Volume Increaser is a 100% drug-free, physician-formulated sperm count increaser supplement that helps you achieve and maintain a shigh amount of sperm."
-    };
+      const tabLinks = document.querySelectorAll(".tablink");
+      const tabHeadings = document.querySelectorAll(".tab-heading");
+      const contentMapping = {
+        "tab-erecto":
+          "Nano ErectoMass is a premium male enhancement supplement that is research-backed to give you MASSIVE size, increases stamina, amplifies endurance, and helps you enjoy longer-lasting, more satisfying sex.",
+        "tab-ignite":
+          "Yes this is Ignite. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+        "tab-enhancer":
+          "This is tab energy. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+        "tab-increaser":
+          " Nano Volume Increaser is a 100% drug-free, physician-formulated sperm count increaser supplement that helps you achieve and maintain a shigh amount of sperm.",
+        "tab-volume":
+          "This is tab volume. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+      };
 
-    tabLinks.forEach(tabLink => {
-        tabLink.addEventListener('click', function() {
-            // Toggle the active class for the clicked tab
-            this.classList.toggle('active');
-            
-            // Get the selected tab's content
-            const tabId = this.getAttribute('data-tab');
-            const tabContent = document.getElementById(tabId);
-            
-            // Display the content of the selected tab
-            updateDisplay();
+      tabLinks.forEach((tabLink) => {
+        tabLink.addEventListener("click", function () {
+          // Toggle the active class for the clicked tab
+          this.classList.toggle("active");
+
+          // Get the selected tab's content
+          const tabId = this.getAttribute("data-tab");
+          const tabContent = document.getElementById(tabId);
+
+          // Display the content of the selected tab
+          updateDisplay();
         });
-    });
+      });
 
-    tabHeadings.forEach(heading => {
-        heading.addEventListener('click', function() {
-            const contentKey = this.getAttribute('data-content');
-            document.getElementById('display').innerText = contentMapping[contentKey];
+      tabHeadings.forEach((heading) => {
+        heading.addEventListener("click", function () {
+          const contentKey = this.getAttribute("data-content");
+          document.getElementById("display").innerText =
+            contentMapping[contentKey];
         });
-    });
+      });
 
-    function updateDisplay() {
-        let selectedTabs = [];
+      function updateDisplay() {
         let selectedContents = [];
-        tabLinks.forEach(tabLink => {
-            if (tabLink.classList.contains('active')) {
-                selectedTabs.push(tabLink.innerText);
-                selectedContents.push(contentMapping[tabLink.getAttribute('data-tab')]);
-            }
+        tabLinks.forEach((tabLink) => {
+          if (tabLink.classList.contains("active")) {
+            selectedContents.push(
+              contentMapping[tabLink.getAttribute("data-tab")]
+            );
+          }
         });
-        document.getElementById('display').innerText = "" + selectedTabs.join(', ') + "\n\n" + selectedContents.join('\n\n');
-    }
+        document.getElementById("display").innerText =
+          "" + "\n" + selectedContents.join("\n\n");
+      }
+
+      // modal
     </script>
   </body>
 </html>
