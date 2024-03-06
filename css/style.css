@@ -609,6 +609,12 @@ a.nav-link:hover {
   height: 18px;
 }
 
+.icon-size__img {
+  width: 16.2px;
+  height: 18px;
+}
+
+
 .modal-bg-width {
   width: 10vh;
   height: 12vh;
