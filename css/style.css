@@ -36,7 +36,7 @@ a {
   -o-background-size: cover; */
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  min-height: 650px;
 }
 
 .nav-width {
@@ -669,6 +669,15 @@ a.nav-link:hover {
 }
 
 @media (min-width: 1200px) {
+  .h-screen-bg {
+    background-image: url(/images/bg-bottles.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+  }
+}
+@media (min-width: 1400px) {
   .h-screen-bg {
     background-image: url(/images/bg-bottles.png);
     background-position: center;
