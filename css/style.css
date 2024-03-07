@@ -10,7 +10,15 @@ body {
 }
 
 a {
-  font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans", sans-serif !important;
+  text-decoration: none !important;
+  color: #ffff !important;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin-top: 10px;
 }
 
 .anta-regular {
@@ -47,14 +55,12 @@ a {
   font-family: "DM Serif Display", serif;
   font-weight: bolder;
   font-style: normal;
-  font-size: 45px;
-  line-height: 55px;
-  color: #dd3b3b;
-  background-image: -webkit-linear-gradient(0deg, #dd3b3b 100%, #b92d1c 100%);
-  background-clip: text;
+  font-size: 42px;
+  line-height: 42px;
+  background: #DD3B3B;
+  background: linear-gradient(to right, #DD3B3B 100%, #B92D1C 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
   text-align: center;
 }
 a.nav-link:hover {
@@ -75,7 +81,7 @@ a.nav-link:hover {
 }
 
 .bg-theme {
-  background-color: #dd3b3b;
+  background-color: #dd3b3b !important;
 }
 
 .bg-gray {
@@ -133,8 +139,16 @@ a.nav-link:hover {
   font-size: 12px;
 }
 
+.font-12-24 {
+  font-size: 12px;
+}
+
 .font-16 {
   font-size: 16px;
+}
+
+.font-md-16 {
+  font-size: 16px !important;
 }
 
 .font-19 {
@@ -142,7 +156,11 @@ a.nav-link:hover {
 }
 
 .font-24 {
-  font-size: 16px;
+  font-size: 24px;
+}
+
+.font-24-42 {
+  font-size: 24px;
 }
 .font-32 {
   font-size: 32px;
@@ -160,7 +178,7 @@ a.nav-link:hover {
 }
 
 .w-90 {
-  width: 90%;
+  width: 90% !important;
 }
 
 .w-80 {
@@ -169,6 +187,10 @@ a.nav-link:hover {
 
 .w-70 {
   width: 70% !important;
+}
+
+.w-60 {
+  width: 60% !important;
 }
 
 .w-55 {
@@ -501,7 +523,13 @@ a.nav-link:hover {
   height: 100%;
 }
 
+/* .swiper .swiper-slide div {
+  height: inherit;
+} */
+
+
 .swiper-slide {
+  height: auto !important;
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -600,20 +628,21 @@ a.nav-link:hover {
 }
 
 .icon-size {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
+}
+
+.icon-size-footer {
+  width: 80%;
+}
+
+.icon-size__img_footer {
+  width: 65%;
 }
 
 .icon-size__img {
-  width: 16.2px;
-  height: 18px;
+  width: 50%;
 }
-
-.icon-size__img {
-  width: 16.2px;
-  height: 18px;
-}
-
 
 .modal-bg-width {
   width: 10vh;
@@ -709,6 +738,10 @@ a.nav-link:hover {
   text-align: center;
 }
 
+.swiper-pagination2 .swiper-pagination-bullet-active {
+  background-color:#DD3B3B !important;
+}
+
 .text-center-right {
   text-align: center;
 }
@@ -740,13 +773,46 @@ a.nav-link:hover {
   height: 62px;
 }
 
-@media (min-width: 768px) {
+.bg-footer {
+  background: url("/images/footer/bg-footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-footer_bg {
+  background-color: #171717;
+}
+
+.logo-padding {
+  padding: 70px;
+}
+
+@media (min-width: 992px) {
   .h-screen-bg {
     background-image: url(/images/bg-bottles.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 820px;
+  }
+
+  .title {
+    font-family: "DM Serif Display", serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 112px;
+    line-height: 112px;
+    background: #DD3B3B;
+    background: linear-gradient(to right, #DD3B3B 100%, #B92D1C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+
+  .sub-title{
+    font-size: 24px;
+    margin-bottom:40px
   }
 
   .h-desk-100 {
@@ -804,19 +870,36 @@ a.nav-link:hover {
   .font-24 {
     font-size: 24px;
   }
+  .font-24-42 {
+    font-size: 42px;
+  }
   .action-icon {
-    background-color:#DD3B3B ;
+    background-color: #dd3b3b;
     width: 7.75rem;
     height: 7.75rem;
   }
-}
-@media (min-width: 992px) {
-  .h-screen-bg {
-    background-image: url(/images/bg-bottles.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
+
+  .font-32 {
+    font: 24px;
+  }
+
+  .font-md-16 {
+    font-size: 24px !important;
+  }
+  .font-12 {
+    font-size: 16px;
+  }
+
+  .font-12-24 {
+    font-size: 24px;
+  }
+
+  .font-72 {
+    font-size: 72px;
+  }
+
+  .logo-padding {
+    padding: 130px;
   }
 }
 
