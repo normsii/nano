@@ -156,6 +156,10 @@ a.nav-link:hover {
   font-size: 16px !important;
 }
 
+.font-42-72 {
+  font-size: 42px;
+}
+
 .font-19 {
   font-size: 19px;
 }
@@ -215,6 +219,10 @@ a.nav-link:hover {
 }
 .w-20 {
   width: 20%;
+}
+
+.w-80-60{
+  width: 80%;
 }
 
 .h-274 {
@@ -751,14 +759,15 @@ a.nav-link:hover {
 }
 
 .bg-coat-girl {
-  width: 306px;
-  height: 542px;
+  width: 100%;
+  height: 400px;
   background-image: url("/images/physicians/female-white-coat.png");
   background-repeat: no-repeat;
   background-position-y: -83px;
   background-size: cover;
   cursor: pointer;
 }
+
 
 .modal-position-right {
   margin-right: 33px !important;
@@ -768,7 +777,7 @@ a.nav-link:hover {
 }
 
 .card-max-width {
-  max-width: 270px;
+  max-width: 100%;
   margin: 0 auto;
   box-shadow: 6px 7px 6px -2px rgb(0 0 0 / 19%);
   -webkit-box-shadow: 6px 7px 6px -2px rgb(0 0 0 / 19%);
@@ -799,6 +808,28 @@ a.nav-link:hover {
 .offcanvas.offcanvas-end {
   border-left: none !important;
 }
+
+#v-pills-tabContent-why .active, #v-pills-tabContent-why .show  {
+  height: 675px;
+      overflow: hidden;
+  
+  }
+
+  .navbar-toggler{
+    border: none !important;
+  }
+
+  .navbar-toggler-icon{
+    background-image: url("../images/icons/burger.png") !important;
+  }
+
+  :not(.btn-check)+.btn:active {
+    color:transparent !important;
+  }
+
+  .navbar-toggler:focus{
+    box-shadow: none !important;
+  }
 
 @media (min-width: 992px) {
   .h-screen-bg {
@@ -906,12 +937,15 @@ a.nav-link:hover {
     font-size: 24px;
   }
 
-  .font-72 {
+  .font-42-72 {
     font-size: 72px;
   }
 
   .logo-padding {
     padding: 130px;
+  }
+  .w-80-60{
+    width: 60%;
   }
 }
 

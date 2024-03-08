@@ -61,6 +61,9 @@ const swiper3 = new Swiper(".swiper3", {
     el: ".swiper-pagination3",
     clickable: true,
   },
+  slidesPerView: 1,
+      spaceBetween: 20,
+
   // autoplay: {
   //   delay: 2500,
   //   disableOnInteraction: false,
@@ -78,6 +81,7 @@ const swiper3 = new Swiper(".swiper3", {
   breakpoints: {
     576: {
       slidesPerView: 2,
+      spaceBetween: 20,
     },
     768: {
       slidesPerView: 2,
@@ -85,6 +89,14 @@ const swiper3 = new Swiper(".swiper3", {
     },
 
     992: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1200: {
       slidesPerView: 3,
       spaceBetween: 20,
     },
@@ -126,6 +138,11 @@ const swiperBestOffer = new Swiper(".swiper-best-offer", {
     el: ".swiper-pagination-bestoffer",
     clickable: true,
   },
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  speed: 2000,
   freeMode: true,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -135,11 +152,15 @@ const swiperBestOffer = new Swiper(".swiper-best-offer", {
     el: ".swiper-scrollbar",
   },
   breakpoints: {
-    992: {
-      slidesPerView: 2,
+    768: {
+      slidesPerView: 1,
       spaceBetween: 20,
     },
     1200: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1500: {
       slidesPerView: 3,
       spaceBetween: 20,
     },
@@ -167,17 +188,14 @@ $(document).ready(function () {
       },
 
       992: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      1200: {
         slidesPerView: 4,
         spaceBetween: 20,
       },
-      1400: {
+      1200: {
         slidesPerView: 5,
         spaceBetween: 20,
       },
+     
     },
   });
 
