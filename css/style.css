@@ -614,7 +614,6 @@ a.nav-link:hover {
   height: 18px;
 }
 
-
 .modal-bg-width {
   width: 10vh;
   height: 12vh;
@@ -805,7 +804,7 @@ a.nav-link:hover {
     font-size: 24px;
   }
   .action-icon {
-    background-color:#DD3B3B ;
+    background-color: #dd3b3b;
     width: 7.75rem;
     height: 7.75rem;
   }
