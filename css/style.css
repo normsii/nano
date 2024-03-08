@@ -787,6 +787,10 @@ a.nav-link:hover {
   padding: 70px;
 }
 
+.offcanvas.offcanvas-end {
+  border-left: none !important;
+}
+
 @media (min-width: 992px) {
   .h-screen-bg {
     background-image: url(/images/bg-bottles.png);
