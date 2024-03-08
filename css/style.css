@@ -48,7 +48,12 @@ li {
 }
 
 .nav-width {
-  max-width: 1500px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.nav-width #offcanvasRight .offcanvas-body ul:nth-child(1) li a {
+  color: black !important;
 }
 
 .title {
@@ -763,8 +768,12 @@ a.nav-link:hover {
 }
 
 .card-max-width {
-  max-width: 350px;
+  max-width: 270px;
   margin: 0 auto;
+  box-shadow: 6px 7px 6px -2px rgb(0 0 0 / 19%);
+  -webkit-box-shadow: 6px 7px 6px -2px rgb(0 0 0 / 19%);
+  -moz-box-shadow: 6px 7px 6px -2px rgb(0 0 0 / 19%);
+  height: 100%;
 }
 
 .action-icon {
